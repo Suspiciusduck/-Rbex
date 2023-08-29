@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+$primary-color: #ff385c;
+$secondary-color: #717171;
+$font-family: 'Helvetica Neue', sans-serif;
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 14px;
+    color: $secondary-color;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+}
