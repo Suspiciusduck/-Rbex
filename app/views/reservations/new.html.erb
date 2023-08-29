@@ -1,0 +1,16 @@
+<div class="container">
+
+<h1>New Reservation</h1>
+<p>You will book for ad : <%= @add.title %></p>
+
+  <%= simple_form_for [@add, @reservation] do |f| %>
+    <%= f.input :check_in,
+            as: :string,
+            input_html: { data: { controller: "datepicker" } } %>
+    <%= f.input :check_out,
+            as: :string,
+            input_html: { data: { controller: "datepicker" } } %>
+    <%= f.input :total_price, placeholder: 'Calculated Price' %>
+    <%= f.submit "Book", class: "btn btn-primary" %>
+  <% end %>
+</div>
