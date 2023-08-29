@@ -1,0 +1,14 @@
+<div class="listing-container">
+  <div class="listing-details">
+    <div class="listing-image">
+    <%= image_tag @image_url, alt: "Listing Image" %>
+  </div>
+    <h1><%= @add.title %></h1>
+    <p><%= @add.description %></p>
+    <p><strong>Price:</strong> <%= @add.price %></p>
+    <p><strong>Availability:</strong> <%= @add.availability %></p>
+    <p><strong>Address:</strong> <%= @add.address %></p>
+    <p><strong>Posted by:</strong> <%= @add.user.email %></p>
+    <button class="contact-button">Contact Host</button>
+  </div>
+</div>
