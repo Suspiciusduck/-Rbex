@@ -9,10 +9,12 @@ require 'json'
 
 locations = JSON.parse(File.read('map_data.json'))
 
-locations["location"].each do |location|
-  Location.create(
-    name: location["name"],
+locations.each do |location|
+  Add.create(
+    title: location["title"],
     description: location["description"],
     category: location["category"]
   )
 end
+
+puts "#{Add.count} locations created"
