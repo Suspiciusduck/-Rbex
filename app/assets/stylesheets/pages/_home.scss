@@ -5,15 +5,18 @@ $font-family: 'Helvetica Neue', sans-serif;
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cartes par ligne */
-  gap: 20px; /* Espace entre les cartes */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .card {
-  width: 100%; /* Occupera toute la largeur de la colonne */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   padding: 20px;
   background-color: white;
-  border-radius: 10px; /* Bords arrondis */
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
@@ -23,6 +26,7 @@ $font-family: 'Helvetica Neue', sans-serif;
   h2 {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 8px;
     margin-bottom: 8px;
     color: $primary-color;
   }
@@ -34,6 +38,7 @@ $font-family: 'Helvetica Neue', sans-serif;
 
   p {
     font-size: 14px;
+    font-weight: bold;
     color: $secondary-color;
   }
 
