@@ -1,7 +1,7 @@
 [
   {
     "title": "Devil`s Tower",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned limestone mine factory mill thing. pretty big, pretty cool, but very popular. worth checking out, safe plus no security.",
     "price": 80,
     "x": 48.552251,
@@ -9,7 +9,7 @@
   },
   {
     "title": "Goat Island",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned fort, fort whitman. pretty nice site, not too popular, and probably some cool tunnels to explore as well. beautiful area, good spot for a picnic.",
     "price": 120,
     "x": 48.362685,
@@ -17,7 +17,7 @@
   },
   {
     "title": "Tilbury Cement",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned cement factory. personally, my first place urbexing. pretty views and no security make it a good beginner spot.",
     "price": 150,
     "x": 47.572001,
@@ -25,7 +25,7 @@
   },
   {
     "title": "Tulalip Munitions Depot",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned munitions depot. tulalips are cleaning but its still pretty cool. abandoned buildings are disappearing fast tho, fun trip either way. slight security, just a barbed fence, the way in and parking is marked on the map. personal fave place.",
     "price": 50,
     "x": 48.085375,
@@ -33,7 +33,7 @@
   },
   {
     "title": "Condit Powerhouse",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned dam stuff, powerhouse. looks like there are 2 trucks outside but according to satellite imagery they havent moved in years. looks really cool, according to pacificorp it is abandoned, doesn`t even look like there`s fencing.",
     "price": 60,
     "x": 45.7543324,
@@ -41,7 +41,7 @@
   },
   {
     "title": "Enloe Dam Powerhouse",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned powerhouse, very cool looking. unlike condit, near guaranteed entry, though it`s much more ruin-ey. great place if youre nearby.",
     "price": 40,
     "x": 48.9633832,
@@ -49,7 +49,7 @@
   },
   {
     "title": "Northern State Mental Hospital",
-    "category": "good places",
+    "city": "good places",
     "description": "abandoned mental hospital. some of the buildings are still in use, but it`s a pretty cool location. no-medium-high security depending on location in the compound. good spot overall, lots to explore, worth checking out if you`re in the area.",
     "price": 80,
     "x": 48.5315302,
@@ -57,7 +57,7 @@
   },
   {
     "title": "Silicon Metal Smelting Plant",
-    "category": "good places",
+    "city": "good places",
     "description": "It`s right next to a busy highway, so be careful when crossing (there`s also a railroad right in front of the plant). Overall, there wasn`t really anyone around. The plant has some barb-wired fence in front of it, but it doesn`t go all the way around, so you can easily just walk a bit and go around the back. The grass here really sticks to your clothes, so I recommend wearing thick material.",
     "price": 120,
     "x": 47.3701586,
@@ -65,7 +65,7 @@
   },
   {
     "title": "Old Olympia Brewery",
-    "category": "good places",
+    "city": "good places",
     "description": "Hardly anyone around, and very easy to get into. There`s a steep trail from the railroad you can walk on to get here. This place is basically empty and there isn`t much to explore.",
     "price": 100,
     "x": 47.0159813,
@@ -73,7 +73,7 @@
   },
   {
     "title": "1990`s Mechanic garage",
-    "category": "good places",
+    "city": "good places",
     "description": "Old abandoned mechanic`s garage, paperwork on the ground inside listed it as from 1990",
     "price": 150,
     "x": 46.502686,
@@ -81,7 +81,7 @@
   },
   {
     "title": "Satsop Nuclear Plant",
-    "category": "good places",
+    "city": "good places",
     "description": "not really abandoned, but the park is still pretty cool. fun place to check out.",
     "price": 110,
     "x": 46.9607869,
@@ -89,7 +89,7 @@
   },
   {
     "title": "Hanford Site",
-    "category": "good places",
+    "city": "good places",
     "description": "hanford nuclear power plant, decommissioned but active for cleanup and very hazardous so not the greatest place to go alone. they do offer tours though, which are free and sound very cool.",
     "price": 90,
     "x": 46.5511203,
@@ -97,7 +97,7 @@
   },
   {
     "title": "Factory-Magnuson Park",
-    "category": "good places",
+    "city": "good places",
     "description": "Description Seems like it hasnt been abandoned for a while but paperwork inside leads me to believe its been abandoned since mid 90`s. Very good condition, be careful because some parts are loose and one of the cabinets almost fell on a friend . Also seems like there is a basement but seems like its flooded. You have to wiggle in through a window pannel that is smashed through. Other then that not much to worry about... no security from what i can tell. Right behind The Mountaineers where the orb is.",
     "price": 70,
     "x": 47.6858599,
@@ -105,7 +105,7 @@
   },
   {
     "title": "Very Small Warehouse Behind bbq restaurant",
-    "category": "good places",
+    "city": "good places",
     "description": "This is a very small warehouse that is behind Big T`s Moonshine BBQ. It`s a great little spot with good picture opportunities. The only thing you have to look out for is the owners of the bbq don`t like people back there. But I have been able to just walk in there in broad daylight.",
     "price": 180,
     "x": 47.8217397,
