@@ -1,4 +1,7 @@
 class AddsController < ApplicationController
+  def index
+  end
+
   def show
     @add = Add.find(params[:id])
     @image_url = fetch_random_image
@@ -17,9 +20,5 @@ class AddsController < ApplicationController
     else
       'https://example.com/default-image.jpg'
     end
-  end
-end
-class AddsController < ApplicationController
-  def index
   end
 end
