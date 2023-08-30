@@ -2,10 +2,15 @@
   {
     "title": "Devil`s Tower",
 <<<<<<< HEAD
+    "city": "Paris"
+    "category": "good places",
+=======
+<<<<<<< HEAD
     "address": "good places",
 =======
     "city": "good places",
 >>>>>>> master
+>>>>>>> 0bdd42eaaf3fc7d81a2c95ff07a966a84de9c709
     "description": "abandoned limestone mine factory mill thing. pretty big, pretty cool, but very popular. worth checking out, safe plus no security.",
     "price": 80,
     "x": 48.552251,

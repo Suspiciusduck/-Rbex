@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'json'
 
-user = User.create!(email: "user10@example.com", password: "password")
+user = User.create!(email: "user12@example.com", password: "password")
 
 # Load JSON data
 json_data = File.read(Rails.root.join('db', 'map_data.json'))
@@ -23,3 +23,9 @@ data.each do |entry|
     user_id: user.id  # Associate the existing user
   )
 end
+
+Home.create!(
+  title: entry["title"],
+  rating: entry["rating"],
+  photo_url: entry["photo_url"],
+)
