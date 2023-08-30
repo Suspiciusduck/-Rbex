@@ -39,7 +39,7 @@ h1 {
 
 p {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 strong {
@@ -55,6 +55,9 @@ strong {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 110px;
 }
 
 .contact-button:hover {
