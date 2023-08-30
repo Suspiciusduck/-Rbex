@@ -3,14 +3,18 @@ $primary-color: #ff385c;
 $secondary-color: #717171;
 $font-family: 'Helvetica Neue', sans-serif;
 
- .card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  transition: transform 0.2s;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cartes par ligne */
+  gap: 20px; /* Espace entre les cartes */
+}
+
+.card {
+  width: 100%; /* Occupera toute la largeur de la colonne */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
     transform: translateY(-4px);
@@ -21,6 +25,11 @@ $font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     margin-bottom: 8px;
     color: $primary-color;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
   p {

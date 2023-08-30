@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :adds do
     resources :reservations, only: %i[new create]
   end
+
+  get '/search', to: 'search#index', as: 'search'
   # Defines the root path route ("/")
   # root "articles#index"
 end

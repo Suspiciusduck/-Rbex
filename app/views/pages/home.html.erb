@@ -3,9 +3,12 @@
 <div class="cards">
   <% @adds.each do |add| %>
     <div class="card">
-      <h2><%= add.name %></h2>
-      <p>Rating: <%= add.rating %></p>
-      <%= image_tag add.photo_url %>
+    <%= link_to add_path(add) do %>
+    <%= image_tag @image_url %>
+      <h2><%= add.title %></h2>
+      <p>Rating</p>
+      <p>Price <%= add.price%></p>
+    <% end %>
     </div>
   <% end %>
 </div>
