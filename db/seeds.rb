@@ -7,7 +7,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Add.destroy_all
 User.destroy_all
-Reservation.destroy_all
 
 require 'json'
 
