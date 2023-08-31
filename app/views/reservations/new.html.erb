@@ -1,16 +1,24 @@
-<div class="container">
+<div class="container mt-3 w-50">
+  <div data-controller="total-price">
+    <h1><strong>New Reservation</strong></h1>
+    <h5><em>You will book for ad : <strong><%= @add.title %></strong></em></h5>
 
-<h1>New Reservation</h1>
-<p>You will book for ad : <%= @add.title %></p>
+  <div class="mt-4">
+    <%= simple_form_for [@add, @reservation] do |f| %>
+      <%= f.input :check_in,
+              as: :string,
+              input_html: { data: { controller: "datepicker", action: "change->total-price#calcul" } } %>
+      <%= f.input :check_out,
+              as: :string,
+              input_html: { data: { controller: "datepicker", action: "change->total-price#calcul" } } %>
+      <%= f.submit "Book", class: "btn btn-primary" %>
+    <% end %>
+  </div>
 
-  <%= simple_form_for [@add, @reservation] do |f| %>
-    <%= f.input :check_in,
-            as: :string,
-            input_html: { data: { controller: "datepicker" } } %>
-    <%= f.input :check_out,
-            as: :string,
-            input_html: { data: { controller: "datepicker" } } %>
-    <%= f.input :total_price   %>
-    <%= f.submit "Book", class: "btn btn-primary" %>
-  <% end %>
+    <div class="mt-4">
+      <p>Price / day : <i id="price"><%= @add.price %></i> € </p>
+      <p data-total-price-target="price"></p>
+    </div>
+
+  </div>
 </div>

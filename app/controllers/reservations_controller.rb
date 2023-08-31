@@ -1,17 +1,13 @@
 class ReservationsController < ApplicationController
-<<<<<<< HEAD
 
   def index
     @reservations = Reservation.where(user_id: current_user)
   end
 
-=======
->>>>>>> 870005055aa49c2ec789b722e3ac2092b49b80a7
   def new
     @reservation = Reservation.new
     @add = Add.find(params[:add_id])
   end
-<<<<<<< HEAD
 
   def create
     @add = Add.find(params[:add_id])
@@ -25,11 +21,15 @@ class ReservationsController < ApplicationController
     end
   end
 
+  def destroy
+    @reservation = Reservation.find(params[:id])
+    @reservation.destroy
+    redirect_to reservations_path, status: :see_other
+  end
+
   private
 
   def reservation_params
     params.require(:reservation).permit(:check_in, :check_out, :total_price, :add_id)
   end
-=======
->>>>>>> 870005055aa49c2ec789b722e3ac2092b49b80a7
 end
