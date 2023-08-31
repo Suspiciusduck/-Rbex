@@ -47,10 +47,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_31_100035) do
     t.text "description"
     t.integer "price"
     t.string "availability"
-    t.string "city"
+    t.string "address"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "city"
     t.integer "rating"
     t.float "latitude"
     t.float "longitude"
