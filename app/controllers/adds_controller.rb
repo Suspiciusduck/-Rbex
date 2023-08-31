@@ -6,8 +6,8 @@ class AddsController < ApplicationController
     @add = Add.find(params[:id])
     @markers = [@add].map do |add|
       {
-        lat: add.x,
-        lng: add.y
+        lat: add.latitude,
+        lng: add.longitude
       }
     end
   end

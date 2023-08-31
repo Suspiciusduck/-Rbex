@@ -5,9 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Add.destroy_all
+User.destroy_all
+
 require 'json'
 
-user = User.create!(email: "user13@example.com", password: "password")
+user = User.create!(email: "user14@example.com", password: "password")
 
 # Load JSON data
 json_data = File.read(Rails.root.join('db', 'map_data.json'))
@@ -15,13 +18,17 @@ data = JSON.parse(json_data)
 
 # Loop through data and create records
 data.each do |entry|
+
   rating = rand(1.0..5.0).round(1)
-  Add.create!(
+  add_new = Add.new(
     title: entry["title"],
     description: entry["description"],
     city: entry["city"],
     price: entry["price"],
     user_id: user.id,
-    rating: rating # Associate the existing user
+    rating: rating,
+    latitude: entry["x"],
+    longitude: entry["y"]
   )
+  add_new.save!
 end
