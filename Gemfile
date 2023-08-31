@@ -79,3 +79,7 @@ end
 gem "pg_search"
 
 gem "devise", "~> 4.9"
+
+gem "geocoder"
+
+gem "gmaps4rails"
