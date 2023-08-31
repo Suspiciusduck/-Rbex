@@ -19,4 +19,8 @@ class AddsController < ApplicationController
       @adds = Add.all
     end
   end
+
+  def new
+    @add = Add.new
+  end
 end
