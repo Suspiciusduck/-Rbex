@@ -51,12 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_31_131531) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
     t.float "rating"
-=======
-    t.string "city"
-    t.integer "rating"
->>>>>>> 4a435fdd39b2d1fc9b07bb6e4ba27f771ee2547a
     t.float "latitude"
     t.float "longitude"
     t.index ["user_id"], name: "index_adds_on_user_id"
