@@ -5,7 +5,7 @@ class CreateAdds < ActiveRecord::Migration[7.0]
       t.text :description
       t.integer :price
       t.string :availability
-      t.string :address
+      t.string :city
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

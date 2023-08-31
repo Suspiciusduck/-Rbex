@@ -12,16 +12,20 @@
           <img src="https://res.cloudinary.com/duxybhdw5/image/upload/v1692949083/cld-sample-2.jpg" alt="Image 3">
         </div>
       </div>
-    </div>
-    <h1><%= @add.title %></h1>
-    <p><%= @add.description %></p>
-    <p><strong>Price:</strong> <%= @add.price %></p>
-    <p><strong>Availability:</strong> <%= @add.availability %></p>
-    <p><strong>Address:</strong> <%= @add.address %></p>
-    <p><strong>Posted by:</strong> <%= @add.user.email %></p>
-    <div class="button-container">
+      <h1><%= @add.title %></h1>
+      <p><%= @add.description %></p>
+      <p><strong>Price:</strong> <%= @add.price %> € </p>
+      <p><strong>Availability:</strong> <%= @add.availability %></p>
+      <p><strong>City: <%= @add.city %></strong></p>
+      <p><strong>Posted by:</strong> <%= @add.user.email %></p>
+      <div class="button-container">
       <button class="contact-button">Contact Host</button>
       <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
     </div>
+  </div>
+  <div style="width: 100%; height: 600px;"
+    data-controller="map"
+    data-map-markers-value="<%= @markers.to_json %>"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 </div>

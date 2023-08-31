@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   end
   resources :reservations, only: %i[index destroy]
 
+  resources :adds do
+    collection do
+      get :search
+    end
+  end
+
   # Defines the root path route ("/")
   # root "articles#index"
 end

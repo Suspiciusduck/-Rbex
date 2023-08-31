@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+
 $primary-color: #ff385c;
 $secondary-color: #717171;
 $font-family: 'Helvetica Neue', sans-serif;
@@ -31,6 +31,24 @@ $font-family: 'Helvetica Neue', sans-serif;
     color: $primary-color;
   }
 
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .rating {
+    font-size: 14px;
+    color: $secondary-color;
+    margin-left: 5px;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -38,7 +56,6 @@ $font-family: 'Helvetica Neue', sans-serif;
 
   p {
     font-size: 14px;
-    font-weight: bold;
     color: $secondary-color;
   }
 

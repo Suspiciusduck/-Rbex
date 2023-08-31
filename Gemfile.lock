@@ -117,8 +117,10 @@ GEM
     ffi (1.15.5)
     font-awesome-sass (6.4.2)
       sassc (~> 2.0)
+    geocoder (1.8.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    gmaps4rails (2.1.2)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
@@ -271,6 +273,8 @@ DEPENDENCIES
   devise (~> 4.9)
   dotenv-rails
   font-awesome-sass (~> 6.1)
+  geocoder
+  gmaps4rails
   httparty
   importmap-rails
   jbuilder

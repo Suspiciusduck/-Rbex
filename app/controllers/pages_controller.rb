@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   end
 
   def home
-    @adds = Add.all
+    @adds = Add.order(id: :asc)
   end
 end
