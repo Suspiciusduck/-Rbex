@@ -1,7 +1,7 @@
 <div class="listing-container">
   <div class="listing-details">
     <div class="carousel-container">
-      <div class="carousel">
+      <div class="carousel" id="image-carousel">
         <div class="carousel-item">
           <img src="https://res.cloudinary.com/duxybhdw5/image/upload/v1692957345/yvzmcjutxjn7hikfnl3z.jpg" alt="Image 1">
         </div>
@@ -18,14 +18,14 @@
       <p><strong>Availability:</strong> <%= @add.availability %></p>
       <p><strong>City: <%= @add.city %></strong></p>
       <p><strong>Posted by:</strong> <%= @add.user.email %></p>
-      <div class="button-container">
-      <button class="contact-button">Contact Host</button>
-      <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
-    </div>
   </div>
   <div style="width: 100%; height: 600px;"
     data-controller="map"
     data-map-markers-value="<%= @markers.to_json %>"
     data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
+  <div class="button-container">
+      <button class="contact-button">Contact Host</button>
+      <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
+    </div>
 </div>
