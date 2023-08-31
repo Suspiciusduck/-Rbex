@@ -19,7 +19,7 @@ data = JSON.parse(json_data)
 # Loop through data and create records
 data.each do |entry|
 
-  rating = rand(1.0..5.0).round(1)
+  rating = rand(3.0..5.0).round(2)
   add_new = Add.new(
     title: entry["title"],
     description: entry["description"],
