@@ -20,4 +20,20 @@ class AddsController < ApplicationController
   def new
     @add = Add.new
   end
+
+  def create
+    @add = Add.new(add_params)
+    @add.user = current_user
+    if @add.save!
+      redirect_to add_path(@add)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  private
+
+  def add_params
+    params.require(:add).permit(:title, :description, :availability, :price, :city, :photo)
+  end
 end
