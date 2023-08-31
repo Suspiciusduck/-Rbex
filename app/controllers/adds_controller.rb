@@ -15,6 +15,7 @@ class AddsController < ApplicationController
         lng: add.longitude
       }
     end
+    random_images
   end
 
   def new
@@ -29,6 +30,36 @@ class AddsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def random_images
+    cloudinary_folder = "Rbex"
+    folder_resources = Cloudinary::Api.resources(type: "upload", prefix: cloudinary_folder)
+
+    if folder_resources["resources"].empty?
+      # Gérer le cas où il n'y a pas d'images, par exemple en affichant un message d'erreur
+      @random_images = []
+    else
+      # Sélectionnez un nombre aléatoire d'images (par exemple, 3 images)
+      @random_images = folder_resources["resources"].sample(3) # Changez 3 en le nombre d'images souhaité
+    end
+  end
+
+
+  def edit
+    @add = Add.find(params[:id])
+  end
+
+  def update
+    @add = Add.find(params[:id])
+    @add.update(add_params)
+    redirect_to add_path(@add)
+  end
+
+  def destroy
+    @add = Add.find(params[:id])
+    @add.destroy
+    redirect_to root_path, status: :see_other
   end
 
   private

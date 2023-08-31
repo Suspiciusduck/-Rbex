@@ -38,9 +38,10 @@ body {
 }
 
 .carousel-item img {
-  max-width: 100%;
-  max-height: 500px;
-  object-fit: contain; /* Permet de conserver le ratio et d'ajuster l'image sans déformation */
+  width: auto; /* Définit la largeur de l'image à 100% du conteneur */
+  height: 300px; /* Définit la hauteur de l'image (ajustez-la en fonction de vos besoins) */
+  object-fit: cover; /* Redimensionne l'image pour qu'elle remplisse complètement le conteneur tout en conservant son ratio d'aspect */
+  object-position: center;
 }
 
 h1 {
