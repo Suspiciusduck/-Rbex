@@ -8,11 +8,24 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.carousel-container {
+  max-width: 100%; /* Empêche les images de déborder du conteneur */
+}
+
+.carousel {
+  display: flex; /* Utiliser Flexbox pour aligner les images */
+  transition: transform 0.3s; /* Ajouter une transition fluide */
+}
+
+.carousel-item{
+  flex: 0 0 100%; /* Une image à la fois occupe toute la largeur */
+  margin-left: auto;
+}
+
 .listing-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #f7f7f7;
 }
 
@@ -22,14 +35,12 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 600px;
-  width: 100%;
 }
 
-.listing-image img {
+.carousel-item img {
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  max-height: 500px;
+  object-fit: contain; /* Permet de conserver le ratio et d'ajuster l'image sans déformation */
 }
 
 h1 {
