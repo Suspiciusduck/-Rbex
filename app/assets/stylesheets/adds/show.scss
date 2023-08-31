@@ -46,6 +46,12 @@ strong {
   font-weight: bold;
 }
 
+.button-container {
+  display: flex;
+  justify-content:space-around;
+  margin-top: 30px;
+}
+
 .contact-button {
   background-color: #ff5a5f;
   color: white;
@@ -56,8 +62,7 @@ strong {
   font-size: 16px;
   transition: background-color 0.3s;
   text-decoration: none;
-  margin-top: 30px;
-  margin-left: 110px;
+
 }
 
 .contact-button:hover {

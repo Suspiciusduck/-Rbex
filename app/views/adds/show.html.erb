@@ -9,7 +9,9 @@
     <p><strong>Availability:</strong> <%= @add.availability %></p>
     <p><strong>Address:</strong> <%= @add.address %></p>
     <p><strong>Posted by:</strong> <%= @add.user.email %></p>
-    <button class="contact-button">Contact Host</button>
-    <%= link_to "Réserver", new_add_reservation_path(@add), class: "contact-button" %>
+    <div class="button-container">
+      <button class="contact-button">Contact Host</button>
+      <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
+    </div>
   </div>
 </div>

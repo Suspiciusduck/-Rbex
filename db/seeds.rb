@@ -23,9 +23,3 @@ data.each do |entry|
     user_id: user.id  # Associate the existing user
   )
 end
-
-Home.create!(
-  title: entry["title"],
-  rating: entry["rating"],
-  photo_url: entry["photo_url"],
-)
