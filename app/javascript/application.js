@@ -3,3 +3,21 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "@popperjs/core"
 import "bootstrap"
+
+document.addEventListener("turbo:load", function() {
+  $('.carousel').slick({
+    dots: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+    ]
+  });
+});
