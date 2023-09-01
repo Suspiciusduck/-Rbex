@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   end
 
   def home
-
     if params[:query].present?
       @adds = Add.search_by_city(params[:query])
     else
