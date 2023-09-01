@@ -27,8 +27,7 @@ class ReservationsController < ApplicationController
     redirect_to reservations_path, status: :see_other
   end
 
-  def calcul_price
-  end
+
 
   private
 
