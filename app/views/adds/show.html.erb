@@ -23,5 +23,7 @@
   <div class="button-container">
       <button class="contact-button">Contact Host</button>
       <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
+      <%= link_to "Edit Ad", edit_add_path(@add), class: "contact-button" %>
+      <%= link_to "Delete Ad", add_path(@add), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "contact-button" %>
     </div>
 </div>

@@ -40,6 +40,22 @@ class AddsController < ApplicationController
     @random_images = image_files.sample(3) # Changez 3 en le nombre d'images souhaité
   end
 
+  def edit
+    @add = Add.find(params[:id])
+  end
+
+  def update
+    @add = Add.find(params[:id])
+    @add.update(add_params)
+    redirect_to add_path(@add)
+  end
+
+  def destroy
+    @add = Add.find(params[:id])
+    @add.destroy
+    redirect_to root_path, status: :see_other
+  end
+
   private
 
   def add_params
