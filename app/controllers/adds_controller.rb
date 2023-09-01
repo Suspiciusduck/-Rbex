@@ -15,6 +15,7 @@ class AddsController < ApplicationController
         lng: add.longitude
       }
     end
+    random_images
   end
 
   def new
@@ -29,6 +30,14 @@ class AddsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def random_images
+    # Obtenez la liste des fichiers d'images dans le dossier app/assets/images
+    image_files = Dir.glob(Rails.root.join('app', 'assets', 'images', '*'))
+
+    # Sélectionnez un nombre aléatoire d'images (par exemple, 3 images)
+    @random_images = image_files.sample(3) # Changez 3 en le nombre d'images souhaité
   end
 
   private
