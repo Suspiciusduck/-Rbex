@@ -9,7 +9,7 @@ body {
 }
 
 .carousel-container {
-  max-width: 100%; /* Empêche les images de déborder du conteneur */
+  max-width: 700px; /* Empêche les images de déborder du conteneur */
 }
 
 .carousel {
@@ -34,14 +34,14 @@ body {
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 600px;
+  max-width: 700px;
 }
 
-.carousel-item img {
-  width: auto; /* Définit la largeur de l'image à 100% du conteneur */
-  height: 300px; /* Définit la hauteur de l'image (ajustez-la en fonction de vos besoins) */
-  object-fit: cover; /* Redimensionne l'image pour qu'elle remplisse complètement le conteneur tout en conservant son ratio d'aspect */
-  object-position: center;
+.carousel-image {
+  width: 700px; /* Définit la largeur de l'image à 100% du conteneur */
+  height: 500px; /* Définit la hauteur de l'image (ajustez-la en fonction de vos besoins) */
+  object-fit:fill; /* Redimensionne l'image pour qu'elle remplisse complètement le conteneur tout en conservant son ratio d'aspect */
+  object-position: center; /* Centre l'image horizontalement et verticalement dans le conteneur */
 }
 
 h1 {
@@ -64,8 +64,9 @@ strong {
   margin-top: 30px;
 }
 
-.contact-button {
-  background-color: #ff5a5f;
+/* Styliser le bouton "Contact Host" */
+.contact-host-button {
+  background-color: #9e9b9b;
   color: white;
   border: none;
   border-radius: 4px;
@@ -74,9 +75,43 @@ strong {
   font-size: 16px;
   transition: background-color 0.3s;
   text-decoration: none;
-
 }
 
-.contact-button:hover {
-  background-color: #e1494c;
+/* Styliser le bouton "Reservation" */
+.reservation-button {
+  background-color: #177000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+/* Styliser le bouton "Edit Ad" */
+.edit-button {
+  background-color: #5a73ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+/* Styliser le bouton "Delete Ad" */
+.delete-button {
+  background-color: #ff060e;
+  color: rgb(247, 244, 244);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
 }
