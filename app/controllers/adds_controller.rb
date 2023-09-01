@@ -33,12 +33,18 @@ class AddsController < ApplicationController
   end
 
   def random_images
-    # Obtenez la liste des fichiers d'images dans le dossier app/assets/images
-    image_files = Dir.glob(Rails.root.join('app', 'assets', 'images', '*'))
+    cloudinary_folder = "Rbex"
+    folder_resources = Cloudinary::Api.resources(type: "upload", prefix: cloudinary_folder)
 
-    # Sélectionnez un nombre aléatoire d'images (par exemple, 3 images)
-    @random_images = image_files.sample(3) # Changez 3 en le nombre d'images souhaité
+    if folder_resources["resources"].empty?
+      # Gérer le cas où il n'y a pas d'images, par exemple en affichant un message d'erreur
+      @random_images = []
+    else
+      # Sélectionnez un nombre aléatoire d'images (par exemple, 3 images)
+      @random_images = folder_resources["resources"].sample(3) # Changez 3 en le nombre d'images souhaité
+    end
   end
+
 
   def edit
     @add = Add.find(params[:id])
