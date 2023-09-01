@@ -4,7 +4,7 @@
       <div class="carousel" id="image-carousel">
     <% @random_images.each do |image| %>
       <div class="carousel-item">
-        <%= cl_image_tag image["public_id"], alt: "Image" %>
+        <%= cl_image_tag image["public_id"], alt: "Image", class: "carousel-image" %>
       </div>
     <% end %>
       </div>
@@ -21,9 +21,8 @@
     data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
   <div class="button-container">
-      <button class="contact-button">Contact Host</button>
-      <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button" %>
-      <%= link_to "Edit Ad", edit_add_path(@add), class: "contact-button" %>
-      <%= link_to "Delete Ad", add_path(@add), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "contact-button" %>
-    </div>
+  <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button reservation-button" %>
+  <%= link_to "Edit Ad", edit_add_path(@add), class: "contact-button edit-button" %>
+  <%= link_to "Delete Ad", add_path(@add), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "contact-button delete-button" %>
+  </div>
 </div>
