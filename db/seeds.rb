@@ -11,7 +11,7 @@ Reservation.destroy_all
 
 require 'json'
 
-user = User.create!(email: "user14@example.com", password: "password")
+user = User.create!(email: "Bobbycit2@gmail.com", password: "d1amantine")
 
 # Load JSON data
 json_data = File.read(Rails.root.join('db', 'map_data.json'))

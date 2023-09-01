@@ -21,7 +21,6 @@
     data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
   <div class="button-container">
-  <button class="contact-button contact-host-button">Contact Host</button>
   <%= link_to "Reservation", new_add_reservation_path(@add), class: "contact-button reservation-button" %>
   <%= link_to "Edit Ad", edit_add_path(@add), class: "contact-button edit-button" %>
   <%= link_to "Delete Ad", add_path(@add), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "contact-button delete-button" %>
