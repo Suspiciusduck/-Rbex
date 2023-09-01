@@ -64,3 +64,27 @@ $font-family: 'Helvetica Neue', sans-serif;
     border-radius: 4px;
   }
 }
+
+.floating-card {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ff5a5f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  z-index: 9999;
+}
+
+
+#close-card {
+  background: transparent;
+  border: none;
+  color: #ff5a5f;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
