@@ -2,15 +2,11 @@
   <div class="listing-details">
     <div class="carousel-container">
       <div class="carousel" id="image-carousel">
-        <div class="carousel-item">
-          <img src="https://res.cloudinary.com/duxybhdw5/image/upload/v1692957345/yvzmcjutxjn7hikfnl3z.jpg" alt="Image 1">
-        </div>
-        <div class="carousel-item">
-          <img src="https://res.cloudinary.com/duxybhdw5/image/upload/v1692957344/agaz7k9hj4juvukv01aq.jpg" alt="Image 2">
-        </div>
-        <div class="carousel-item">
-          <img src="https://res.cloudinary.com/duxybhdw5/image/upload/v1692949083/cld-sample-2.jpg" alt="Image 3">
-        </div>
+    <% @random_images.each do |image| %>
+      <div class="carousel-item">
+        <%= cl_image_tag image["public_id"], alt: "Image" %>
+      </div>
+    <% end %>
       </div>
       <h1><%= @add.title %></h1>
       <p><%= @add.description %></p>
