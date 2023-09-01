@@ -2,11 +2,11 @@
   <div class="listing-details">
     <div class="carousel-container">
       <div class="carousel" id="image-carousel">
-        <% @random_images.each do |image_path| %>
-          <div class="carousel-item">
-            <%= image_tag image_path, alt: "Image" %>
-          </div>
-        <% end %>
+    <% @random_images.each do |image| %>
+      <div class="carousel-item">
+        <%= cl_image_tag image["public_id"], alt: "Image" %>
+      </div>
+    <% end %>
       </div>
       <h1><%= @add.title %></h1>
       <p><%= @add.description %></p>
