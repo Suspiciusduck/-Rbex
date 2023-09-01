@@ -41,7 +41,7 @@ class AddsController < ApplicationController
       @random_images = []
     else
       # Sélectionnez un nombre aléatoire d'images
-      @random_images = folder_resources["resources"].sample(10)
+      @random_images = folder_resources["resources"].sample(40) # Changez 3 en le nombre d'images souhaité
     end
   end
 
