@@ -40,11 +40,10 @@ class AddsController < ApplicationController
       # Gérer le cas où il n'y a pas d'images, par exemple en affichant un message d'erreur
       @random_images = []
     else
-      # Sélectionnez un nombre aléatoire d'images (par exemple, 3 images)
-      @random_images = folder_resources["resources"].sample(3) # Changez 3 en le nombre d'images souhaité
+      # Sélectionnez un nombre aléatoire d'images
+      @random_images = folder_resources["resources"].sample(40) # Changez 3 en le nombre d'images souhaité
     end
   end
-
 
   def edit
     @add = Add.find(params[:id])

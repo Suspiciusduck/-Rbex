@@ -11,7 +11,7 @@ Reservation.destroy_all
 
 require 'json'
 
-user = User.create!(email: "user14@example.com", password: "password")
+user = User.create!(email: "Bobbycit2@gmail.com", password: "d1amantine")
 
 # Load JSON data
 json_data = File.read(Rails.root.join('db', 'map_data.json'))
@@ -19,7 +19,6 @@ data = JSON.parse(json_data)
 
 # Loop through data and create records
 data.each do |entry|
-
   rating = rand(3.0..5.0).round(2)
   add_new = Add.new(
     title: entry["title"],
