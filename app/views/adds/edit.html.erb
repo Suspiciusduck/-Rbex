@@ -1,5 +1,5 @@
-<div class="container mt-3 w-50">
-  <h1><strong>New Ad</strong></h1>
+<div class="container mt-3">
+  <h1>Edit Ad : <strong><%= @add.title %> </h1>
 
   <div class="mt-4">
     <%= simple_form_for [@add] do |f| %>
@@ -11,7 +11,8 @@
           end %>
       <%= f.input :city %>
       <%= f.input :photo, as: :file %>
-      <%= f.submit "Add", class: "btn btn-primary" %>
+      <%= f.submit "Edit", class: "btn btn-primary" %>
     <% end %>
   </div>
+
 </div>
