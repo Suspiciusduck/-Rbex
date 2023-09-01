@@ -6,13 +6,11 @@
       <%= f.input :title %>
       <%= f.input :description %>
       <%= f.input :price %>
-      <%= f.input :availability, as: :boolean do
-          f.check_box :availability, {}, true, false
-          end %>
+      <%= f.check_box :availability,  checked: true %>
+      <%= f.label :availability %>
       <%= f.input :city %>
       <%= f.input :photo, as: :file %>
       <%= f.submit "Edit", class: "btn btn-primary" %>
     <% end %>
   </div>
-
 </div>
