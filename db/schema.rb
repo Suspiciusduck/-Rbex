@@ -51,7 +51,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_31_132956) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "city"
     t.float "rating"
     t.float "latitude"
     t.float "longitude"
